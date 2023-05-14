@@ -37,6 +37,30 @@ body {
   height: 100vh;
   background-color: var(--secondaryColor);
   color: var(--primaryColor);
+  
 }
 
 /* 아래에 css animation을 지정해주세요. */
+@keyframes loader{
+  0%{
+    transform:rotate(0deg);
+    
+  }
+  100%{
+    transform:rotate(360deg);
+    
+  }
+}
+.loader{
+  animation-name:loader;
+  animation-duration:3s;
+  width:500px;
+  height:500px;
+  border:1px solid white;
+  
+  animation-direction: alternate;
+  
+  
+
+  
+}
